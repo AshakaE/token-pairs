@@ -13,4 +13,9 @@ export class StoreTokenPair {
             console.log(err)
         }
     }
+
+    public async getPairs(): Promise<[]> {
+        
+        return []
+    }
 }
