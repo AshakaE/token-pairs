@@ -17,6 +17,6 @@ app.listen(port, async (): Promise<void> => {
         })
         .catch((error) => console.log(error))
 
-    indexe.storeTokenPairs()
+    indexe.dbstore()
     console.log(`Server listening on port ${port}`)
 })
