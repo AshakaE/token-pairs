@@ -1,6 +1,6 @@
 import express from 'express'
 import dotenv from 'dotenv'
-import { StoreTokenPair } from './Service/indexer'
+import { IndexService } from './Service/indexer'
 import { AppDataSource } from './Database/data-source'
 
 dotenv.config()
@@ -8,7 +8,7 @@ dotenv.config()
 const app = express()
 const port: number = process.env.PORT as unknown as number || 3000
 
-const indexe = new StoreTokenPair()
+const indexer = new IndexService()
 
 app.listen(port, async (): Promise<void> => {
     await AppDataSource.initialize()
@@ -17,6 +17,6 @@ app.listen(port, async (): Promise<void> => {
         })
         .catch((error) => console.log(error))
 
-    indexe.dbstore()
+    indexer.initiateService()
     console.log(`Server listening on port ${port}`)
 })
