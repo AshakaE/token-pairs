@@ -1,4 +1,4 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm'
+import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn } from 'typeorm'
 
 @Entity()
 export class TokenPair {
@@ -15,5 +15,8 @@ export class TokenPair {
     token1: string
 
     @Column()
-    publishTime: number
+    publishTime: string
+
+    @CreateDateColumn()
+    created: Date
 }
