@@ -4,6 +4,7 @@ Connects to Uniswap graph api and retrieves all pairs, synchronizes them to a lo
 
 ## Setup
 - ``git clone https://github.com/AshakaE/token-pairs.git``
+-  ``cd token-pairs``   
 - Run ``yarn``
 - Fill out the rest of the envs in a `.env` file
 ```yml
