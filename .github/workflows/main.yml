@@ -3,10 +3,10 @@ on:
   workflow_dispatch:
   repository_dispatch:
     inputs:
-      input1:
+      home:
         description: 'Home'
         required: true
-      input2:
+      name:
         description: 'Name'
         required: true
 
