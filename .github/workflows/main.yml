@@ -4,10 +4,10 @@ on:
   repository_dispatch:
     inputs:
       input1:
-        description: 'Input 1'
+        description: 'Home'
         required: true
       input2:
-        description: 'Input 2'
+        description: 'Name'
         required: true
 
 jobs:
