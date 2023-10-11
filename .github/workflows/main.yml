@@ -1,0 +1,19 @@
+name: My Workflow
+on:
+  workflow_dispatch:
+    inputs:
+      input1:
+        description: 'Input 1'
+        required: true
+      input2:
+        description: 'Input 2'
+        required: true
+
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Print Inputs
+      run: |
+        echo "Input 1: ${{ inputs.input1 }}"
+        echo "Input 2: ${{ inputs.input2 }}"
