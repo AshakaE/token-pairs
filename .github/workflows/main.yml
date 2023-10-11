@@ -1,6 +1,7 @@
 name: My Workflow
 on:
   workflow_dispatch:
+  repository_dispatch:
     inputs:
       input1:
         description: 'Input 1'
