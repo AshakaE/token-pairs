@@ -1,7 +1,6 @@
 name: My Workflow
 on:
   workflow_dispatch:
-  repository_dispatch:
     inputs:
       home:
         description: 'Home'
